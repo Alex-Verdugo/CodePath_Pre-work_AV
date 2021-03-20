@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+   
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>CodePath Pre-work Simon Game by Alexander Verdugo</h1>
+
+    <p>
+      Welcome to my game where your skills will be put to the test.
+
+      <br />
+      <br />HOW TO PLAY : <br />
+      -Memorize the series of patterns on the boxes below. <br />
+      - Repeat that pattern in the correct order and time to win.
+     <br /> -Hard Mode is almost twice as fast with a longer pattern.
+    </p>
+
+    
+    <button id="startBtn" onclick="easyMode()">
+      Start
+    </button>
+    
+     <button id="hardBtn" onclick="hardMode()">
+     Start Hard Mode
+    </button>
+
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop
+    </button>
+
+    <div id="gameButtonArea">
+      
+      <div>
+        <button
+          id="button1"
+          class = "panelShape1"
+          onclick="guess(1)"
+          onmousedown="startTone(1)"
+          onmouseup="stopTone()"
+        ></button>
+        <button
+          id="button2"
+          class = "panelShape2"
+          onclick="guess(2)"
+          onmousedown="startTone(2)"
+          onmouseup="stopTone()"
+        ></button>
+       </div>
+      
+      <div>
+        <button
+          id="button3"
+          class = "panelShape3"
+          onclick="guess(3)"
+          onmousedown="startTone(3)"
+          onmouseup="stopTone()"
+        ></button>
+        <button
+          id="button4"
+          class = "panelShape4"
+          onclick="guess(4)"
+          onmousedown="startTone(4)"
+          onmouseup="stopTone()"
+        ></button>
+          </div>
+      
+        <button
+          id="button5"
+          class = "center"
+          onclick="guess(5)"
+          onmousedown="startTone(5)"
+          onmouseup="stopTone()"
+        > 
+      </button>
+      
+    </div>
+  </body>
+</html>
